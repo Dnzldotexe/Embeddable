@@ -2,7 +2,7 @@
 Convert your Google Drive link/s to an "embeddable" link for HTML
 
 ### Why?
-So that you don't have to painstakingly convert every single link on your Google Drive as an embeddable link for JupyterNotebook/HTML/MarkDown. See my example of just copying the link from Google Drive: ![Sample Image](https://drive.google.com/file/d/1MdwhOTkuc2amndSc_j09c8JzCtL8wr1q/view?usp=drive_link).
+So that you don't have to painstakingly convert every single link on your Google Drive as an embeddable link for JupyterNotebook/HTML/MarkDown. See my example of just copying the link from Google Drive: ![Sample Image](https://drive.google.com/file/d/1MdwhOTkuc2amndSc_j09c8JzCtL8wr1q/view?usp=drive_link). It doesn't work, does it? Now, go use the app!
 
 ---
 ### Access the App here -> https://embeddable.streamlit.app/
