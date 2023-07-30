@@ -1,8 +1,8 @@
 """
 This app converts the normal google drive links to an embeddable link for HTML
 """
-# Importing pyperclip clipboard module
-import pyperclip as clip
+# Importing clipboard module
+import clipboard as clip
 
 # Importing streamlit third-party App Framework
 import streamlit as st
