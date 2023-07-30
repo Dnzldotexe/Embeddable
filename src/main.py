@@ -1,9 +1,6 @@
 """
 This app converts the normal google drive links to an embeddable link for HTML
 """
-# Importing clipboard module
-import clipboard as clip
-
 # Importing streamlit third-party App Framework
 import streamlit as st
 
@@ -48,16 +45,13 @@ def main():
     # Adding text area input
     url_input = st.text_area(label=" ",placeholder="paste your google drive links here")
 
-    # Additional information
-    st.info("Links are automatically converted, just press the Copy button")
-
-    # Stores the converted link
-    converted_url = link_convert(url_input)
-
     # Copy to clipboard button
-    if st.button("Copy"):
-        clip.copy(converted_url)
-        st.success("Link/s copied to clipboard!")
+    if st.button("Convert"):
+        # Stores the converted link
+        converted_url = link_convert(url_input)
+
+        # Displays the converted link
+        st.code(converted_url)
 
 
 # Running main
