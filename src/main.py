@@ -26,6 +26,11 @@ def link_convert(link: str) -> str:
         # Removes the ordinary suffix
         link = link.replace("/view?usp=drive_link", "")
 
+    # If drivesdk is present
+    if "drivesdk" in link:
+        # Removes the ordinary suffix
+        link = link.replace("/view?usp=drivesdk", "")
+
     # If view is present
     if "view" in link:
         # Removes the ordinary suffix
@@ -45,7 +50,7 @@ def main() -> None:
     # Adding text area input
     url_input = st.text_area(label=" ",placeholder="paste your google drive links here")
 
-    # Copy to clipboard button
+    # Convert button
     if st.button("Convert"):
         # Stores the converted link
         converted_url = link_convert(url_input)
