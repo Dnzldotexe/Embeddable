@@ -9,7 +9,7 @@ import streamlit as st
 st.set_page_config(page_title="Embeddable", page_icon="📎")
 
 
-def link_convert(link: str):
+def link_convert(link: str) -> str:
     """
     Replaces the links' prefixes and suffixes to be embeddable
     """
@@ -35,7 +35,7 @@ def link_convert(link: str):
     return link
 
 
-def main():
+def main() -> None:
     """
     Contains the main application
     """
