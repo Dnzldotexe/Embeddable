@@ -50,7 +50,7 @@ def main() -> None:
     # Adding text area input
     url_input = st.text_area(label=" ",placeholder="paste your google drive links here")
 
-    # Convert button
+    # Adding Convert button
     if st.button("Convert"):
         # Stores the converted link
         converted_url = link_convert(url_input)
@@ -59,6 +59,6 @@ def main() -> None:
         st.code(converted_url)
 
 
-# Running main
+# Runs main
 if __name__ == "__main__":
     main()
